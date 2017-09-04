@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EjeLab3</string>
+
+    <string-array name="tipo_pizza">
+        <item></item>
+        <item>Americana</item>
+        <item>Meet Lover</item>
+        <item>Suprema</item>
+        <item>Súper Suprema</item>
+    </string-array>
+
+</resources>

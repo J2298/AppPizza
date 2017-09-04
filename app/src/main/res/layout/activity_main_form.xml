@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Pizza"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"/>
+
+    <Spinner
+        android:id="@+id/spi_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_1"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:entries="@array/tipo_pizza">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de masa"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_below="@+id/spi_1"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"/>
+    
+    <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_2"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Masa gruesa"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Masa delgada"
+            android:layout_marginTop="6dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Masa artesanal"
+            android:layout_marginTop="6dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_1"
+        android:text="Complementos"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"/>
+    
+    <CheckBox
+        android:id="@+id/chb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_3"
+        android:text="Extra queso mozarella"
+        android:textSize="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="12dp"/>
+
+    <CheckBox
+        android:id="@+id/chb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chb_1"
+        android:text="Extra jamón"
+        android:textSize="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/txt_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chb_2"
+        android:text="Dirección de Envío"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_4"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/bt_ordenar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_radius"
+        android:text="ORDENAR!"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:onClick="call_pizza"/>
+
+
+</RelativeLayout>
